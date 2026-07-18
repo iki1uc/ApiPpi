@@ -12,6 +12,13 @@ h1 { color:#0f0; letter-spacing:4px; margin-bottom:30px; }
 a { color:#6cf; text-decoration:none; font-weight:bold; }
 pre { background:#000; border-left:3px solid #6cf; padding:15px; margin-top:10px; white-space:pre-wrap; }
 </style>
+
+<script>
+    // Ordnername automatisch erkennen
+    const folderName = location.pathname.split("/").slice(-2)[0];
+</script>
+
+<script src="../T-UNIVERSAL/t.loader.js"></script>
 </head>
 
 <body>
@@ -24,19 +31,8 @@ pre { background:#000; border-left:3px solid #6cf; padding:15px; margin-top:10px
 </div>
 
 <div class="block">
-    <div class="title">Identität</div>
-    <p><a href="ID.html">→ 360‑Identität öffnen</a></p>
-</div>
-
-<div class="block">
-    <div class="title">360°-Daten</div>
-    <pre>
-Rotation = 360°
-Achsenmatrix = 6×6
-Dimensionen = 6D
-Felder pro Achse = 64
-Ausnutzung = 100%
-    </pre>
+    <div class="title">Ordner</div>
+    <pre id="ordner"></pre>
 </div>
 
 <div class="block">
@@ -46,6 +42,11 @@ Ausnutzung = 100%
     <a href="../ANKER/index.html">ANKER</a>
     <a href="../API/index.html">API</a>
 </div>
+
+<script>
+document.getElementById("ordner").innerText = "Aktiver Ordner: " + folderName;
+T.init(folderName);
+</script>
 
 </body>
 </html>
