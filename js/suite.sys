@@ -1,0 +1,50 @@
+// schach.os + schach.bios + sys.lauf = Win10 Ready
+// von UNREAL Traum zu REAL
+
+const T = {
+  os: "Win10 Ready",
+  lauf: "sys.lauf",
+
+  init() {
+    console.log("T-Loader REAL · Win10 Ready · sys.lauf");
+
+    // REAL Checks statt Traum console.log
+    if(!this.checkSCSI()) return;
+    
+    this.loadTechREAL();   // kein 12e mehr
+    this.loadRoomsREAL();  // 90-60-90 statt B/H/Q/T Traum
+    this.loadNC2REAL();    // nur einmal, kein (1)
+    this.move();           // REAL Move dazu
+  },
+
+  checkSCSI(){
+    // Win10 Ready Check
+    return SCSI.ready && RAID.ready && SLI.ready;
+  },
+
+  loadTechREAL() {
+    // REAL: nur was funktional ist
+    // 6D-Baum.raw + 6E→6D.tech - kein 12e
+    return "Tech REAL · 6D · 81";
+  },
+
+  loadRoomsREAL() {
+    // REAL: 3/9/81 als ROM = SCSI = ROME
+    // 3 = 90, 9 = 60, 81 = 90 = 90-60-90 Tatsachen
+    return UNREAL.load(); // Load als Unreal wird REAL
+  },
+
+  loadNC2REAL() {
+    // REAL: nur lock + sync, kein Doppel
+    // NC²□.lock -> sys/ , NC²□.sync -> sync/
+  },
+
+  move(){
+    // REAL: Load + Move = REALisierung
+    // von Unreal zu Real
+    UNREAL.move("3","81");
+    console.log("sys.lauf · Win10 Ready for REAL");
+  }
+};
+
+T.init();
