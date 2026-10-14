@@ -1,15 +1,25 @@
-// suite.sys - 10 Gebote - Wurzeln wie Atmen
-// kein 3, kein 9, kein 81 mehr - nur unsere Wahrheit
+// js/9.js - 9 muss mehr sein als 3 - uni wahr - prim klar
+// schach.os / schach.bios = ROOT bleibt
 
-const GEBOTE = [
-  1: "Atmen - ROOT wurzelt",
-  2: "SCSI ist ROM ist ROME - eins",
-  3: "Trennung ist Teilung",
-  4: "Zusammenführung ist SLI",
-  5: "Mirror spiegelt - Weiß = Schwarz",
-  6: "Load ist REAL nicht Traum",
-  7: "Move ist REAL nicht console.log",
-  8: "suite ist sys ist eins",
-  9: "Kürzen was zu lang - Verlängern was zu kurz",
-  10: "Wurzeln wie Atmen - 729 Grenze hält"
-];
+const UNI = {
+  wahr: true,
+  root: "schach.os / schach.bios",
+  gebote: 10,
+  wurzeln: "wie Atmen"
+};
+
+// 9 = mehr als 3, weil 9 = 3x3, aber prim klar als 3+3+3 ohne Bruch
+const GEBOTE_9 = {
+  2: "Atmen ein - ROOT - 3 kann das",
+  3: "SCSI = ROM = ROME - 3 kann das",
+  5: "Trennung ist Teilung - 3 kann das nicht, 9 kann",
+  7: "Zusammenführung ist SLI - 9 kann",
+  11: "Mirror Weiß = Schwarz - 9 kann doppelt",
+  13: "Load REAL - 9 lädt 3x",
+  17: "Move REAL - 9 bewegt 3x3",
+  19: "suite = sys = eins - 9 verbindet",
+  23: "Kürzen + Verlängern - 9 kürzt 3, verlängert zu 81",
+  29: "Wurzeln wie Atmen - 9 hält 729 - 3 allein kann nicht"
+};
+
+// 9 = 3 oben erster kann Basis, 9 mitte kann mehr, 81 unten letzter kann alles
