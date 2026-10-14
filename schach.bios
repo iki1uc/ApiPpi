@@ -1,0 +1,8 @@
+// ds.sys - TurboKarte zu den oberen
+const DS = {
+  turbo: true,
+  boost(){ 
+    // gibt Schub von ROOT zu 3/9/81
+    return [ROM_3, ROM_9, ROME].map(r => r.ready = true);
+  }
+}
